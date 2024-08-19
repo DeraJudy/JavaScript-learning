@@ -66,24 +66,41 @@
 // Objective:
 // Write a JavaScript program that simulates a simple ATM withdrawal process.
 
-const balance = 1000;
-const withdrawAmount = parseInt(prompt("Enter the amount you wish to withdraw:"));
+// const balance = 1000;
+// const withdrawAmount = parseInt(prompt("Enter the amount you wish to withdraw:"));
 
+// if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
+//     alert("Invalid Input. Please enter amount you want to withdraw");
+// } else {
+//     if (withdrawAmount >= balance) {
+//         alert("Insufficent Funds");
+//     } else if (withdrawAmount % 10 !== 0) {
+//         alert("Please enter an amount in multiples of 10.");
+//     } else {
+//         const newBalance = balance - withdrawAmount;
+//         alert("Transaction successful. Your new balance is " + newBalance + ".");
+//     }
+// }
 
-// console.log(newBalance);
+const choice = parseInt(prompt("Select an option (1-5):\n1. View Profile\n2. Edit Profile\n3. Delete Profile\n4. Logout\n5. Help"));
 
-if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
-    alert("Invalid Input. Please enter amount you want to withdraw");
-} else {
-    if (withdrawAmount >= balance) {
-        alert("Insufficent Funds");
-    } else if (withdrawAmount % 10 !== 0) {
-        alert("Please enter an amount in multiples of 10.");
-    } else {
-        const newBalance = balance - withdrawAmount;
-        alert("Transaction successful. Your new balance is " + newBalance + ".");
-    }
-
+switch (choice) {
+    case 1:
+        alert("You have selected 'View Profile'.");
+        break;
+    case 2:
+        alert("You have selected 'Edit Profile'.");
+        break;
+    case 3:
+        alert("You have selected 'Delete Profile'.");
+        break;
+    case 4:
+        alert("You have selected 'Logout'.");
+        break;
+    case 5:
+        alert("You have selected 'Help'.");
+        break;
+    default:
+        alert("Invalid choice. Please select a valid option from the menu.");
 }
-
 
