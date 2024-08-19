@@ -82,25 +82,48 @@
 //     }
 // }
 
-const choice = parseInt(prompt("Select an option (1-5):\n1. View Profile\n2. Edit Profile\n3. Delete Profile\n4. Logout\n5. Help"));
+// const choice = parseInt(prompt("Select an option (1-5):\n1. View Profile\n2. Edit Profile\n3. Delete Profile\n4. Logout\n5. Help"));
 
-switch (choice) {
-    case 1:
-        alert("You have selected 'View Profile'.");
-        break;
-    case 2:
-        alert("You have selected 'Edit Profile'.");
-        break;
-    case 3:
-        alert("You have selected 'Delete Profile'.");
-        break;
-    case 4:
-        alert("You have selected 'Logout'.");
-        break;
-    case 5:
-        alert("You have selected 'Help'.");
-        break;
-    default:
-        alert("Invalid choice. Please select a valid option from the menu.");
+// switch (choice) {
+//     case 1:
+//         alert("You have selected 'View Profile'.");
+//         break;
+//     case 2:
+//         alert("You have selected 'Edit Profile'.");
+//         break;
+//     case 3:
+//         alert("You have selected 'Delete Profile'.");
+//         break;
+//     case 4:
+//         alert("You have selected 'Logout'.");
+//         break;
+//     case 5:
+//         alert("You have selected 'Help'.");
+//         break;
+//     default:
+//         alert("Invalid choice. Please select a valid option from the menu.");
+// }
+
+const day = parseInt(prompt("Select an option (1-7):\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6 Saturday\n7 Sunday"));
+
+switch (day) {
+  case 1:
+    alert("Monday");
+    break;
+  case 2:
+    alert("Tuesday");
+    break;
+  case 3:
+    alert("Wednesday");
+    break;
+  case 4:
+    alert("Thursday");
+  case 5:
+    alert("Friday");
+  case 6:
+    alert("Saturday");
+  case 7:
+    alert("Sunday");
+  default:
+    alert("Invalid day");
 }
-
